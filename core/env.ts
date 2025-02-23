@@ -7,9 +7,9 @@ export const env = createEnv({
   },
   server: {
     DATABASE_URL: z.string().url(),
-    AUTH_SECRET: z.string(),
-    AUTH_DISCORD_ID: z.string(),
-    AUTH_DISCORD_SECRET: z.string()
+    AUTH_SECRET: z.string()
+    // AUTH_DISCORD_ID: z.string(),
+    // AUTH_DISCORD_SECRET: z.string()
   },
   runtimeEnv: {
     NEXT_PUBLIC_BASE_API_URL: process.env.NEXT_PUBLIC_VERCEL_URL
@@ -17,8 +17,9 @@ export const env = createEnv({
       : "http://localhost:3000/api/",
 
     DATABASE_URL: process.env.DATABASE_URL,
-    AUTH_SECRET: process.env.AUTH_SECRET,
-    AUTH_DISCORD_ID: process.env.AUTH_DISCORD_ID,
-    AUTH_DISCORD_SECRET: process.env.AUTH_DISCORD_SECRET
+    AUTH_SECRET: process.env.AUTH_SECRET
+
+    // AUTH_DISCORD_ID: process.env.AUTH_DISCORD_ID,
+    // AUTH_DISCORD_SECRET: process.env.AUTH_DISCORD_SECRET
   }
 })

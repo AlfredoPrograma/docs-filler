@@ -4,7 +4,7 @@ import { PropsWithChildren } from "react"
 import { Providers } from "./providers"
 
 export const metadata: Metadata = {
-  title: "Habbit Tracker"
+  title: "Docs Filler"
 }
 
 export default function RootLayout({ children }: PropsWithChildren) {
